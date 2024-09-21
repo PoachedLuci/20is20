@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scene4.rpy", line 3, in script
+    [mcname] "Is this some kind of glitter bomb?"
+Exception: Sayer b'[mcname]' is not a function or string.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/scene4.rpy", line 3, in script
+    [mcname] "Is this some kind of glitter bomb?"
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\ast.py", line 2572, in execute
+    Say.execute(self)
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\ast.py", line 592, in execute
+    raise Exception("Sayer %s is not a function or string." % self.who.encode("utf-8"))
+Exception: Sayer b'[mcname]' is not a function or string.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.0.24082114
+20is20 1.0
+Wed Sep 18 15:18:13 2024
