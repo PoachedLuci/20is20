@@ -15,8 +15,10 @@ menu:
 python:     
       mcname = renpy.input("It has my first name?", length=32)
       mcname = mcname.strip()
+      mcname = mcname.capitalize()
       mclast = renpy.input("and last name?", length=32)
       mclast = mclast.strip()
+      mclast = mclast.capitalize()
       
       if not mcname:
             mcname = "Lil"

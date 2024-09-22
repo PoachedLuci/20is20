@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/scene4.rpy", line 25: end of line expected.
-    you "It could be money…":
-                            ^
+File "game/scene6.rpy", line 8: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+(Perhaps you left out a " at the end of the first line.)
+    "Stepping past the threshold and into the mansion, you couldn’t help but 
+    ^
+        gasp at the state of the foyer before you."
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Wed Sep 18 15:31:53 2024
+Sun Sep 22 00:17:41 2024

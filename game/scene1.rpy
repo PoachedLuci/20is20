@@ -1,7 +1,7 @@
 ﻿
 label start:
-    
- centered """
+
+centered """
  A life changing invitation… \n
 Sounds too good to be true, right
     """

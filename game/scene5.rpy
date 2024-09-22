@@ -1,5 +1,8 @@
 label scene5: 
-    scene houseoutside_d1 with dissolve 
+
+play music "happyday.mp3" loop 
+
+scene houseoutside_d1 with dissolve 
 
 "And so, after a long taxi ride to the listed address, 
 as well as a walk up some unnecessary long pavement- you stood in front of a mansion."
@@ -24,3 +27,34 @@ you "..."
 you "I feel like I’m going to get murdered…"
 
 "As soon as the morbid thought crosses your mind, a chilly wind passes your way."
+
+reaper "Hello!"
+
+"The sudden exclamation cutting through the silence of the night startles you."
+
+you "AH-"
+
+"A man comes into your view, waving casually with a hand tucked into his pocket. "
+
+show reaper default
+
+
+reaper "I assume you’re here for the competition as well?"
+
+menu: 
+    "'Yes, I am'":
+        reaper "Awesome, Me too."
+        you "Thank goodness, at least I’m not going in alone…"
+    "'No, I am not.'":
+        "He smiles cheekily at your statement."
+        reaper "It’s obvious you’re lying."
+        you "Wha- how?!"
+        reaper "You wouldn’t be able to enter this area if you weren’t."
+        you "I’m not some kind of vampire."
+        reaper "Then what are you?"
+        you "{i}What is this guy talking about…{/i}"
+reaper "So, have you been here long?"
+
+you "No, I just got here."
+
+jump scene6

@@ -316,7 +316,7 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
 
