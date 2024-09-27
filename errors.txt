@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene6.rpy", line 8: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-(Perhaps you left out a " at the end of the first line.)
-    "Stepping past the threshold and into the mansion, you couldn’t help but 
-    ^
-        gasp at the state of the foyer before you."
+File "game/characters.rpy", line 15: positional argument follows keyword argument
+    Movie(size=1920, 1080), play="images/backgrounds/HopesandPrayers.ogg")
+                          ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Sun Sep 22 00:17:41 2024
+Thu Sep 26 18:47:37 2024

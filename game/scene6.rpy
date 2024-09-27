@@ -1,11 +1,11 @@
 label scene6:
-    
+    play music "cute.mp3" loop 
     scene bginside1
 
     "Stepping past the threshold and into the mansion, you couldn’t help but 
     gasp at the state of the foyer before you."
 
-    "Despite the state of its outside, the inside itself was well maintained."
+    "Despite the state of its outside, the inside itself was well-maintained."
 
     "The floorboards, while worn, were swept and washed. 
     No cobwebs decorated the corners of the walls, or the banister."
@@ -28,25 +28,25 @@ label scene6:
 
     reaper "Like, this place I mean. It’s impressive, yeah?"
 
-    you "It’s sure…"
+    you "It’s ..."
 
 menu: 
     "Impressive":
         "You can’t help but agree with him."
         you "I can’t believe how good it looks. It’s clearly been here a while."
-        mystery "A while may be underselling it."
+        mystery "'A while' may be underselling it."
         mystery "It’s {i}practically prehistoric{/i}."
     "Overwhelming": 
         you "Huge."
         you "Like, I don’t remember the last time I’ve set foot in a place this big you know?"
-        reaper "I mean yeah it’s big but…"
+        reaper "I mean, yeah it’s big, but…"
         "He shrugs at you, before saying"
         reaper "... in the end, the folks who live here are probably the same as anyone else."
         reaper "Folks are all the same in the end, no matter what."
         mystery "Woooow. From anyone else, that would have sounded edgy."
     "A Dump":
-        you "It’s in need of a lot of work."
-        you "Like sure, the location’s great and the owner is trying hard 
+        you "It needs a lot of work."
+        you "Like sure, the location’s great and the owner is trying hard, 
         but this place has to be filled with I don’t know."
         you "Asbestos or something?"
         "As your new companion stares at you confused, a laugh like clear and charming bells could be heard."
@@ -64,7 +64,7 @@ show siren default
 
 "Out of the shadows of this mysterious mansion came your childhood friend."
 
-"It’s near unbelievable and for a moment, you find yourself wondering if this was reality."
+"For a moment, you find yourself wondering if this was reality."
 
 you "I’m not losing it, am I?"
 
@@ -74,7 +74,7 @@ siren "I’d be surprised if you hadn't lost it a while ago."
 
 you "[siren] what? What are you doing here? I- "
 
-"She looks away from you, and says with a scoff."
+"She looks away from you, and scoffs."
 
 siren "Isn’t it obvious? I’m here to win."
 
@@ -82,5 +82,5 @@ siren "Isn’t it obvious? I’m here to win."
 
 siren "I see the competition is… strong."
 
-return
+jump scene7 
 

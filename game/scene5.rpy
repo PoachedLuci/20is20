@@ -1,15 +1,15 @@
 label scene5: 
 
-play music "happyday.mp3" loop 
+
 
 scene houseoutside_d1 with dissolve 
 
-"And so, after a long taxi ride to the listed address, 
+"And so, after a long drive to the listed address, 
 as well as a walk up some unnecessary long pavement- you stood in front of a mansion."
 
 "From what you saw, the curtains in the windows were drawn with no light visible."
 
-" A healthy mess of plants decorated the ground and threatened to take over the plaster cracked walls."
+"A healthy mess of plants decorated the ground and threatened to take over the plaster-cracked walls."
 
 "The dark of the night only highlighted the fact that it was barely visible among the growing trees."
 
@@ -18,7 +18,7 @@ as well as a walk up some unnecessary long pavement- you stood in front of a man
 you "Is this even the right address?"
 
 "You kept your invitation tucked away in your back pocket, 
-only pulling it out now to confirm you were in the right area."
+only pulling it out now to confirm you were in the right place."
 
 you "Yep… this has to be it."
 
@@ -37,7 +37,6 @@ you "AH-"
 "A man comes into your view, waving casually with a hand tucked into his pocket. "
 
 show reaper default
-
 
 reaper "I assume you’re here for the competition as well?"
 

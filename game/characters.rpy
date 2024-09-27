@@ -10,6 +10,8 @@ image siren default = "s default"
 
 image reaper default = "rds" 
 
+image plant default = "pds_"
 
+image mov_back = Movie(play="images/backgrounds/mcroomv.webm", size = (1950, 1080))
 
 
