@@ -4,6 +4,9 @@ label scene2:
     mc "Ugh…"
 
     scene mcroom_d1 with dissolve
+
+    queue sound ["audio/vfx/movement.wav"] 
+    
     "Looking over at your desktop setup, over at your screen with the 
     latest attempt at a commissions site pulled up, you couldn’t help but feel a twinge of…"
    
@@ -22,22 +25,15 @@ menu:
 
 "Without any hopes of support outside yourself, your money has been dwindling and your meals have gone from Chili's to bags of potato chips."
 
-"And not even the name brand. You’re down to store-brand cheese puffs already.
-Maybe it was time to face the music." 
+"And not even the name brand. You’re down to {i}store-brand{/i} chips already."
+
+"Maybe it was time to face the music." 
 
 "Maybe you should give up, find some temp job in an office and be a hobbyist"
 
-"Without any hopes of support outside yourself, your money has been dwindling and your meals have gone from Chili's to bags of potato chips."
-
-"And not even the name brand. You’re down to store-brand cheese puffs now."
-
-"Maybe it was time to face the music."
-
-"Maybe you should give up, find some temp job in an office and be a hobbyist."
-
 "Or maybe that letter was legit. The way you had gotten it was way too weird to be a prank, right?"
 
-scene mov_back 
+scene mov_back with dissolve
 
 mc "..."
 

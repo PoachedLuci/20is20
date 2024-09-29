@@ -2,6 +2,8 @@ label scene4:
 
 you "Is this some kind of glitter bomb?"
 
+play sound ["audio/vfx/paper.wav"] fadein 1.0 
+
 "You shook the envelope around, hearing nothing outright sinister."
 
 "You stared down with tired eyes, conflicted whether you should open it or 
@@ -14,7 +16,6 @@ heart suddenly racing."
 you "..."
 
 menu:
-
     "Chuck it into the pile":
         you "I’m not in the mood to be pranked by some punk kid right now…"
         "You carelessly threw the letter into the pile, ignoring the nagging feeling in the back of your mind."
@@ -22,15 +23,17 @@ menu:
         "spending hours in front of your monitor- searching through bare cupboards to find an ounce of sustenance- 
         laying in bed cursing at the world."
         "Through it all, you couldn’t get the letter out of your mind."
-    "'It could be money…'":
-
+        you "It could be money…"
         "You smiled slightly at the thought, though the reality of the decorated envelope probably 
         containing nothing more than parchment wiped it off quickly."
         "You found yourself back in the living room, staring at the pile with deep contempt."
-    "'If this is a prank, I swear…'":
-
         "You picked up the letter."
-"Your finger ran over the edge of the seam- and with bated breath you carefully lifted the seal."
+    "Open it":
+        you "If this is a prank, I swear…"
+
+queue sound ["audio/vfx/letter.wav"]
+
+"Your finger ran over the edge of the seam-and with bated breath you carefully lifted the seal."
 
 you "..."
 

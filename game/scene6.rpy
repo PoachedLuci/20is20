@@ -1,14 +1,14 @@
 label scene6:
-    play music "cute.mp3" loop 
+    play music "cute.mp3" loop volume 0.2
     scene bginside1
 
-    "Stepping past the threshold and into the mansion, you couldn’t help but 
-    gasp at the state of the foyer before you."
+    "Stepping past the threshold and into the mansion, 
+    you can’t help but gasp at the state of the foyer before you."
 
-    "Despite the state of its outside, the inside itself was well-maintained."
+    "Despite the state of its outside, the inside itself is well-maintained."
 
-    "The floorboards, while worn, were swept and washed. 
-    No cobwebs decorated the corners of the walls, or the banister."
+    "The floorboards, while worn, are swept and washed. 
+    No cobwebs decorate the corners of the walls or the banister."
 
     "With each further step you take, the situation becomes stranger. 
     Each step, with its matching echo down the halls, reveals more questions."
@@ -21,9 +21,9 @@ label scene6:
 
     reaper "Pretty impressive…"
 
-    "Despite the deadpan expression, there’s a glint of wonder to his voice. 
-    His eyes drift the same way yours had."
-
+    "Despite the deadpan expression, there’s a glint of wonder in his voice. 
+    His eyes drift the same way yours had." 
+    
     "At least, they do until they meet yours."
 
     reaper "Like, this place I mean. It’s impressive, yeah?"
@@ -43,13 +43,13 @@ menu:
         "He shrugs at you, before saying"
         reaper "... in the end, the folks who live here are probably the same as anyone else."
         reaper "Folks are all the same in the end, no matter what."
-        mystery "Woooow. From anyone else, that would have sounded edgy."
+        mystery "Woooow. From anyone else, that would have sounded {i}edgy{/i}."
     "A Dump":
         you "It needs a lot of work."
         you "Like sure, the location’s great and the owner is trying hard, 
         but this place has to be filled with I don’t know."
         you "Asbestos or something?"
-        "As your new companion stares at you confused, a laugh like clear and charming bells could be heard."
+        "As your new companion stares at you confused, a high-pitched laugh rang out from nearby."
         mystery "Asbestos? You’re invited to someone’s home, and you say it’s filled with asbestos?"
 
 "That voice grabs hold of your mind, catches your words in your mouth before you can say them."
@@ -64,23 +64,64 @@ show siren default
 
 "Out of the shadows of this mysterious mansion came your childhood friend."
 
-"For a moment, you find yourself wondering if this was reality."
+"For a moment, you find yourself wondering if this is real."
 
 you "I’m not losing it, am I?"
 
-"As if to assuage your fears, [siren] laughed in that pitchy way you knew her for."
+show siren laugh
+
+"As if to assuage your fears, [siren] laughed in that pitchy way you remember her by."
 
 siren "I’d be surprised if you hadn't lost it a while ago."
 
 you "[siren] what? What are you doing here? I- "
 
+show siren default
+
 "She looks away from you, and scoffs."
 
 siren "Isn’t it obvious? I’m here to win."
 
-"Once her eyes fell on Reaper she paused, gazed up and down, and then said with a nonchalant smile."
+"Vivi continues to ignore you. Instead, her eyes stop on your new… friend. 
+As she pauses and gazes up and down, she sing-songs to him." 
+
+show siren exc 
 
 siren "I see the competition is… strong."
+
+"For a moment, he seems to perk up.
+That moment is cut short, however, as Vivi drawls."
+
+siren "And not much else."
+
+"The cruel comment seems to amuse Diesel."
+"Vivi, on the other hand, drums her fingers on her arm. 
+You’d known her enough to know she was annoyed."
+"But that wasn’t the question, was it? You force the question again."
+
+you "What are you doing here, Vivi?"
+
+show siren default
+
+"Her fingers stop drumming, only to squeeze her arm instead."
+
+you "It’s been ages! Where have you been?"
+
+"You want nothing more than to grill Vivi, to get some answers."
+
+"After all, you had been friends when you were younger. 
+She disappeared without so much as a goodbye."
+
+"Why is she here now, of all times? This has to be some sort of sick joke."
+
+"Diesel furrows his brows and leans close to ask."
+
+reaper "Hey… are you okay?"
+
+"This question, too, finds no answer."
+
+play music "cute.mp3" loop volume 0.1 fadeout 1.0 
+
 
 jump scene7 
 

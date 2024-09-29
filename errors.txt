@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 15: positional argument follows keyword argument
-    Movie(size=1920, 1080), play="images/backgrounds/HopesandPrayers.ogg")
-                          ^
+File "game/scene2.rpy", line 36: expected 'simple_expression' not found.
+    scene mov_back with 
+                        ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Thu Sep 26 18:47:37 2024
+Sun Sep 29 02:27:32 2024

@@ -1,5 +1,5 @@
 label scene9: 
-    scene black 
+    scene curtaincall
     show siren default 
     show reaper default at left
     show plant default at right

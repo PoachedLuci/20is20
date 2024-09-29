@@ -1,15 +1,21 @@
 label scene7:
-    scene bginside1
-    show siren default at midright
-    show reaper default at midleft
+    scene bginside1 with dissolve
+    show siren default at midright with dissolve
+    show reaper default at midleft with dissolve
 
-    play music "distorted-easy.mp3" loop 
+    play music "distorted-easy.mp3" loop fadein 1.0
 
-    "A chill runs through as the room has gotten noticeably darker. 
-    Those going to get murdered vibes you had earlier are returning … quickly."
+    define they = Pronoun("they", "she", "he", custom="they")
 
-    "Voices start to come from the walls, lights flicker, you almost expect ghosts to start 
-    popping out but instead the walls themselves feel almost alive."
+    define person = Term("person", "woman", "man", id="person")
+
+    "A chill runs through your bones, as the room grows noticeably darker. 
+    Those ‘going to get murdered’ vibes you had earlier are suddenly returning …"
+
+    play sound "audio/vfx/whispers.wav" volume 0.1
+
+    "Voices start to come from the walls. Lights flicker. You almost expect 
+    ghosts to start popping out but instead, the walls themselves feel almost alive."
 
     mystery "Are you ready to find the answers you seek?"
 
@@ -19,62 +25,110 @@ label scene7:
 
     siren "Yea, no shit. Sounds like we’re all stuck here."
 
-    you "Nope, not worth anymore."
+    you "Nope, not worth it anymore."
 
-    "You spin around and try yanking it open, it feels as though the door’s 
-    being tied together from the outside and getting stronger as you pull."
+    "You spin around and try yanking the door open, it feels as though 
+    it’s being tied together from the outside. Each pull only holds the door tighter."
 
     menu:
-        "'Yup, this is it. I die here.":
+        "Yup this is it. I’m going to die here.":
             "You sit down on the floor in defeat and stare at the door."
-            siren "Well [they] officially lost it."
-        "Continue banging on the door.":
-            "You continue but to no avail."
-            "The door’s slowly start feeling more and more like an immovable wall being glued together."
+            show siren laugh
+            siren "Well [they_ve] officially lost it."
+        "Continue yanking on the door.":
+            "You continue trying to escape but to no avail."
+            "No amount of tugging makes the door budge.
+            You feel as though somehow trying to open them made them want to stay shut even more."
         "Pull out your cell phone.":
-            "You go to try and call for help but realize you’re in the most backwater, 
-            isolated, no one will ever find my body, part of town."
-            "Of course there's no reception."
-    reaper "Is this how most competitions are run? Where’s the person 
-    who’s going to give me my greatest desire?"
+            "Your phone! Duh. In times like this, you could always count on technology."
+            "Yet when you try calling for help, you soon realize you’re in the most backwater, 
+            isolated, no-one-will-ever-find-my-body part of town. "
+            "Of {i}course{/i} there's no reception."
+    "As if to tempt fate, your new companion calls out to the void."
 
-    mystery "Since you asked, please don’t forget the goal of this competition is for you to find that out."
+    reaper "Is this how most competitions are run? 
+    Where’s the host? Who’s going to grant me my wish?"
 
-    mystery "If you are all now ready to hear the rules, I bet you would all love to get started."
+    mystery "Remember: the goal of this competition is for you to find out."
 
-    "You look around trying to pinpoint where this voice could be coming from but you have no clue, 
-    so instead you start looking around at the other two people trapped in the room."
+    mystery "I’m sure you’d all love to get started if you’re ready for the rules."
+
+    "No matter where you whip your head, there’s no sign of where this voice was coming from."
+    
+    "At this rate, you’re sure your heart will beat out your chest."
+
+    "Why did you ever agree to this stupid game? You’re trapped, 
+    you’re with a stranger and an old friend, and the doors would not budge."
+
+    "In a moment of wide-eyed panic, you look to your companions. 
+    Surely they are as freaked out as you are–"
+
+    show siren exc
 
     siren "Hell yeah!"
 
     "She looks almost bursting with excitement. 
     Like someone who’s about to watch their favorite show's new season."
+    "Is this for real?!"
 
     reaper "Ready."
 
-    "He looks confused as to where the voices are coming from too but has just 
-    chosen to smile straight ahead as though they’re standing right infront of him."
+    "As for the other guy, he smiles straight ahead and 
+    responds to the voice as if they are straight in front of him."
+    "There may have been some confusion there, but he seemed all for this too."
+    "It looks like you were alone in being afraid. Great. That totally made you feel better."
+    "Resigned to your possible fate of being a horror movie's final [person], you let out a shaky sigh and grumble."
 
-    you "Please get on with it." 
+    you "Fine, just… get on with it." 
 
-    mystery "Glady! The only way to make sure you all have a fair shot at guessing who the host is, 
-    is by making things a little interesting with trials you also have to complete."
+    mystery "Glady!"
 
-    mystery "There will be a total of three trials, each one will lead to you all 
-    learning things about yourself and each other."
+    "This voice was far too happy about this for your tastes."
 
-    mystery "It is important that you learn about each other through these and so there will be trials where teamwork is imperative."
+    mystery "To keep things nice and fair between you four is by 
+    having you compete in little trials. That should keep things interesting."
 
-    mystery "You will only be allowed to work in pairs of two and no more."
+    "Wait, four?"
 
-    mystery "Whoever can find the host by 11pm on Halloween night will get whatever their heart desires, as promised."
+    mystery "There will be a total of three trials, each one leading you to learn things about each other. 
+    Who knows? Perhaps you’ll learn some things about yourself!"
 
-    mystery "The first trial will start in 1 hour upstairs, at the first door on the left. Discuss who will be partners amongst the four of you."
+    mystery "Learning about each other is imperative here, 
+    so some trials will require teamwork. Be sure to stick together."
 
-    "You start to sweat wondering if you will be the one left out during these trials."
+    mystery "In these trials, you will only be allowed to work in pairs and no more."
 
-    "{i}Pairs of two? Is that to get someone eliminated? Can you be eliminated? Four of us?{/i}"
+    mystery "Whoever can find the host by 11 PM on Halloween night will 
+    be granted whatever their heart desires, as promised."
 
-    "You look around trying to find this mysterious fourth person while also trying to figure out who you could team up with."
+    mystery "The first trial will start in 1 hour upstairs, at the first door on the left. 
+    Discuss who will be partners amongst the four of you."
 
+    "Again with this fourth person… who were they? Where were they?"
+
+    reaper "I wonder where this fourth person is…"
+
+    "Thank god. At least someone is wondering the same thing you are."
+
+    "As for Vivi, she only scoffs and states."
+
+    siren "Hopefully they can provide some interesting competition… or companionship."
+
+    siren "Well, we can at least hope they follow instructions well. Shall we head upstairs?"
+
+    menu: 
+        "About the fourth person":
+            you "I mean if they never show up, I guess that’d be less competition…"
+            reaper "But then we wouldn’t be able to pair up…"
+            "He sounds almost disappointed. Bless his soul."
+        "About the staircase":
+            "I don’t know about this… These stairs look totally unstable. 
+            I bet they’ll just fall apart when we go up or something.."
+            "Vivi rolls her eyes at you, before stepping close 
+            enough beside you to shove your back slightly."
+            siren "Don’t be a wuss. Come on."
+    "Well, it looks like you all are now committed to this. 
+    Whether you want to or not, you may as well roll with it."
+
+    
 jump scene8

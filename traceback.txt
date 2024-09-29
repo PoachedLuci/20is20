@@ -1,32 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scene7.rpy", line 4, in script
-    show reaper default at midleft
-  File "game/scene7.rpy", line 4, in <module>
-    show reaper default at midleft
-NameError: name 'midleft' is not defined
+  File "game/scene2.rpy", line 36, in script
+    scene mov_back fadein 1.0
+Exception: Image 'mov_back' does not accept attributes 'fadein 1 .0'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scene7.rpy", line 4, in script
-    show reaper default at midleft
-  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\ast.py", line 1111, in execute
+  File "game/scene2.rpy", line 36, in script
+    scene mov_back fadein 1.0
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\ast.py", line 1245, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\ast.py", line 1070, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\ast.py", line 1070, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/scene7.rpy", line 4, in <module>
-    show reaper default at midleft
-NameError: name 'midleft' is not defined
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Michelle\Desktop\renpy-8.3.0-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'mov_back' does not accept attributes 'fadein 1 .0'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.0.24082114
 20is20 1.0
-Thu Sep 26 14:52:58 2024
+Sun Sep 29 02:07:25 2024

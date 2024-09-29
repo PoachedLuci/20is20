@@ -1,15 +1,20 @@
 label scene8:
 menu:
+    "With an uneasy heart, and a deep concern for your future well-being, you"
     "Go down the hallway.":
-        you "Might as well take a peak around this mansion and gather 
-        information on where I’ve been kidnapped."
+        you "Might as well take a peak around this mansion and 
+        gather information on where I’ve been kidnapped."
     "Take a look around the current room.":
         "You find that there is nothing here you haven’t already noticed. 
         Same paintings, same stairs, same people."
+        "Well. No point in exploring it any further. 
+        Seeing a musty painting isn’t going to change the fact that you’re 
+        possibly doomed."
+        "May as well start exploring elsewhere."
     "Go upstairs.":
-        siren "Yea I don’t think going up is a smart move."
-        "You look up and notice that the plants upstairs have started to overgrow 
-        along with all the woods and floors moving around."
+        siren "Yeah I don’t think going up is a smart move."
+        "Your line of sight is drawn to Vivi’s finger, 
+        which points from the steps to what you can see of the upstairs landing."
         "Probably not the best idea to go up there since they are probably 
         getting it ready for the first trial."
         
