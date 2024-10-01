@@ -2,7 +2,7 @@ label scene4:
 
 you "Is this some kind of glitter bomb?"
 
-play sound ["audio/vfx/paper.wav"] fadein 1.0 
+queue sound ["audio/vfx/paper.wav"] 
 
 "You shook the envelope around, hearing nothing outright sinister."
 
@@ -20,7 +20,7 @@ menu:
         you "I’m not in the mood to be pranked by some punk kid right now…"
         "You carelessly threw the letter into the pile, ignoring the nagging feeling in the back of your mind."
         "The rest of the day, you tried to go back to your daily routine,"
-        "spending hours in front of your monitor- searching through bare cupboards to find an ounce of sustenance- 
+        "Spending hours in front of your monitor- searching through bare cupboards to find an ounce of sustenance- 
         laying in bed cursing at the world."
         "Through it all, you couldn’t get the letter out of your mind."
         you "It could be money…"
@@ -38,6 +38,10 @@ queue sound ["audio/vfx/letter.wav"]
 you "..."
 
 you "What the HELL is this?!"
+
+show letter at truecenter, half_size 
+
+show layer master at night
 
 "Congratulations!"
 

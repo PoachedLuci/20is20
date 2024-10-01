@@ -25,11 +25,17 @@ you "..."
 
 you "I feel like I’m going to get murdered…"
 
+play sound ["audio/vfx/wind.wav"]
+
 "As soon as the morbid thought crosses your mind, a chilly wind passes your way."
 
 mystery "Hello!"
 
 "The sudden exclamation cutting through the silence of the night startles you."
+
+stop sound fadeout 1.0
+
+scene houseoutside_d1 with hpunch
 
 you "AH-"
 
@@ -41,16 +47,21 @@ mystery "I assume you’re here for the competition as well?"
 
 menu: 
     "Yes, I am":
+        show reaper s 
         mystery "Awesome, Me too."
         you "Thank goodness, at least I’m not going in alone…"
     "No, I am not.":
+        show reaper s 
         "He gives a cheeky smile at your statement."
         mystery "It’s obvious you’re lying."
         you "Wha- how?!"
         mystery "You wouldn’t be able to enter this area if you weren’t."
         you "I’m not some kind of vampire."
+        show reaper con
         mystery "Then what are you?"
         you "{i}What is this guy talking about…{/i}"
+
+show reaper default
 mystery "So, have you been here long?"
 
 you "No, I just got here."
@@ -71,7 +82,11 @@ you "Pff, scared? A-as if."
 
 "The tremor in your voice betrays your front."
 
+show reaper con
+
 mystery "Wait, you're actually scared?" 
+
+show reaper s 
 
 mystery "It’s gonna be alright, trust me. These places only seem spooky ‘cause you’re seeing it at night."
 
@@ -79,10 +94,12 @@ mystery "I bet if you were to come here in the day you’d just think it was a s
 
 "His lighthearted smile makes you feel a little bit better." 
 
-you "Thanks…"
+you "Thanks… I’m [you] by the way."
 
-you "Should we head inside now … what’s your name?"
+mystery "Diesel."
 
-mystery "Diesel, and as long as you’re feeling alright go ahead, let’s go."
+you "Should we head inside now?"
+
+reaper "As long as you’re feeling alright, let’s go."
 
 jump scene6

@@ -15,7 +15,7 @@ menu:
     "Regret":
         mc "Maybe I should have gone to business school…"
     "Pride":
-        mc "Okay yeah my situation sucks, but it’s my own"
+        mc "Okay yeah my situation sucks, but it’s my own."
     "Doubt":
         mc  "Are you really going to make rent this month with this setup?"
 
@@ -29,7 +29,7 @@ menu:
 
 "Maybe it was time to face the music." 
 
-"Maybe you should give up, find some temp job in an office and be a hobbyist"
+"Maybe you should give up, find some temp job in an office and be a hobbyist."
 
 "Or maybe that letter was legit. The way you had gotten it was way too weird to be a prank, right?"
 

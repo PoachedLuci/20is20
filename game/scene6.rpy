@@ -1,6 +1,8 @@
 label scene6:
     play music "cute.mp3" loop volume 0.2
-    scene bginside1
+    scene bginside1 with dissolve 
+    
+    play sound ["audio/vfx/steps.wav"] loop 
 
     "Stepping past the threshold and into the mansion, 
     you can’t help but gasp at the state of the foyer before you."
@@ -15,9 +17,13 @@ label scene6:
 
     "Who lived here? Why would they even bother with maintaining a place of this size?"
 
+    stop sound 
+    
     "Why stick with this whole haunted-looking mansion schtick?"
 
     "As your thoughts drift, your new… companion… lets out a low whistle."
+
+    show reaper default with dissolve
 
     reaper "Pretty impressive…"
 
@@ -40,7 +46,7 @@ menu:
         you "Huge."
         you "Like, I don’t remember the last time I’ve set foot in a place this big you know?"
         reaper "I mean, yeah it’s big, but…"
-        "He shrugs at you, before saying"
+        "He shrugs at you, before saying,"
         reaper "... in the end, the folks who live here are probably the same as anyone else."
         reaper "Folks are all the same in the end, no matter what."
         mystery "Woooow. From anyone else, that would have sounded {i}edgy{/i}."
@@ -60,7 +66,8 @@ you "... [siren]?"
 
 "Sure enough, as soon as her name passed your lips she stepped forward."
 
-show siren default 
+show reaper default at midleft with move
+show siren default at midright with dissolve
 
 "Out of the shadows of this mysterious mansion came your childhood friend."
 
@@ -89,10 +96,14 @@ show siren exc
 
 siren "I see the competition is… strong."
 
+show reaper con 
+
 "For a moment, he seems to perk up.
 That moment is cut short, however, as Vivi drawls."
 
 siren "And not much else."
+
+show reaper s 
 
 "The cruel comment seems to amuse Diesel."
 "Vivi, on the other hand, drums her fingers on her arm. 
@@ -113,6 +124,8 @@ you "It’s been ages! Where have you been?"
 She disappeared without so much as a goodbye."
 
 "Why is she here now, of all times? This has to be some sort of sick joke."
+
+show reaper con 
 
 "Diesel furrows his brows and leans close to ask."
 

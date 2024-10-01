@@ -142,7 +142,7 @@ style namebox:
     xpos gui.name_xpos
     xanchor gui.name_xalign
     xsize gui.namebox_width
-    ypos 25
+    ypos gui.name_ypos
     ysize gui.namebox_height
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
@@ -248,7 +248,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.975
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -291,8 +291,13 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xalign 0.15
-        yalign 0.5
+        if renpy.get_screen("main_menu"):
+            xalign 0.154
+            yalign 0.7
+        else:
+            xoffset 280
+            yalign 0.5
+        
 
         spacing gui.navigation_spacing
 
@@ -389,6 +394,8 @@ style main_menu_frame:
 
     background "gui/overlay/main_menu.png"
 
+    
+
 style main_menu_vbox:
     xalign 1.0
     xoffset -30
@@ -421,6 +428,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     if main_menu:
         add gui.main_menu_background
+        
     else:
         add gui.game_menu_background
 
@@ -472,6 +480,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                 else:
 
                     transclude
+                    
 
     use navigation
 
@@ -548,7 +557,7 @@ style return_button:
 screen about():
 
     tag menu
-
+    
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
@@ -566,7 +575,8 @@ screen about():
                 text "[gui.about!t]\n"
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
+            
+    
 
 style about_label is gui_label
 style about_label_text is gui_label_text

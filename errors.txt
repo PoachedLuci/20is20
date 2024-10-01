@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene2.rpy", line 36: expected 'simple_expression' not found.
-    scene mov_back with 
-                        ^
+File "game/screens.rpy", line 294: vbox expects a non-empty block.
+    if main_menu:
+                 ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Sun Sep 29 02:27:32 2024
+Mon Sep 30 22:57:46 2024
