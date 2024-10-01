@@ -1,0 +1,58 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+TypeError: Value (70, 30) of type <class 'tuple'> not recognized as a position.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\core.py", line 2188, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\core.py", line 2836, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\core.py", line 1354, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\layout.py", line 903, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\layout.py", line 903, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\layout.py", line 903, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\screen.py", line 754, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\layout.py", line 916, in render
+    offset = child.place(rv, 0, 0, width, height, surf)
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\displayable.py", line 493, in place
+    xpos, ypos = place(width, height, surf.width, surf.height, placement)
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\displayable.py", line 61, in place
+    xpos = compute_raw(xpos, width)
+  File "C:\Users\Michelle\Desktop\Clients\renpy-8.3.0-sdk\renpy\display\core.py", line 226, in compute_raw
+    raise TypeError("Value {} of type {} not recognized as a position.".format(value, type(value)))
+TypeError: Value (70, 30) of type <class 'tuple'> not recognized as a position.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.0.24082114
+20is20 1.0
+Mon Sep 30 21:50:09 2024

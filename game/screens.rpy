@@ -158,7 +158,8 @@ style say_dialogue:
 
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
+    ypos 80
+
 
     adjust_spacing False
 
@@ -247,7 +248,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.975
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -290,8 +291,13 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if renpy.get_screen("main_menu"):
+            xalign 0.154
+            yalign 0.7
+        else:
+            xoffset 280
+            yalign 0.5
+        
 
         spacing gui.navigation_spacing
 
@@ -307,7 +313,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Prefs") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -315,7 +321,7 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
 
@@ -340,6 +346,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
+    xalign 0.5
 
 
 ## Main Menu screen ############################################################
@@ -387,6 +394,8 @@ style main_menu_frame:
 
     background "gui/overlay/main_menu.png"
 
+    
+
 style main_menu_vbox:
     xalign 1.0
     xoffset -30
@@ -419,6 +428,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     if main_menu:
         add gui.main_menu_background
+        
     else:
         add gui.game_menu_background
 
@@ -470,6 +480,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                 else:
 
                     transclude
+                    
 
     use navigation
 
@@ -546,7 +557,7 @@ style return_button:
 screen about():
 
     tag menu
-
+    
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
@@ -564,7 +575,8 @@ screen about():
                 text "[gui.about!t]\n"
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
+            
+    
 
 style about_label is gui_label
 style about_label_text is gui_label_text
