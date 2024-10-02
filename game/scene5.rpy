@@ -1,10 +1,11 @@
-label scene5: 
-scene houseoutside_d1 with dissolve 
+label scene5:
+
+scene houseoutside_d1 with dissolve
 
 play sound ["audio/vfx/cardoorcloses.wav"]
 
-"And so, after a long drive to the listed address, 
-as well as a walk up some unnecessarily long pavement- you stood in front of a mansion."
+"""And so, after a long drive to the listed address, 
+as well as a walk up some unnecessarily long pavement- you stood in front of a mansion."""
 
 "From what you see, the curtains in the windows are drawn with no light visible."
 
@@ -16,8 +17,8 @@ as well as a walk up some unnecessarily long pavement- you stood in front of a m
 
 you "Is this even the right address?"
 
-"You kept your invitation tucked away in your back pocket, 
-only pulling it out now to confirm you are in the right place."
+"""You kept your invitation tucked away in your back pocket,
+only pulling it out now to confirm you are in the right place."""
 
 you "Yep… this has to be it."
 
@@ -45,23 +46,35 @@ show reaper default
 
 mystery "I assume you’re here for the competition as well?"
 
-menu: 
+menu:
     "Yes, I am":
-        show reaper s 
+        show reaper s
+
         mystery "Awesome, Me too."
+
         you "Thank goodness, at least I’m not going in alone…"
+        
     "No, I am not.":
-        show reaper s 
+        show reaper s
+
         "He gives a cheeky smile at your statement."
+
         mystery "It’s obvious you’re lying."
+
         you "Wha- how?!"
+
         mystery "You wouldn’t be able to enter this area if you weren’t."
+
         you "I’m not some kind of vampire."
+
         show reaper con
+
         mystery "Then what are you?"
+
         you "{i}What is this guy talking about…{/i}"
 
 show reaper default
+
 mystery "So, have you been here long?"
 
 you "No, I just got here."
@@ -84,19 +97,19 @@ you "Pff, scared? A-as if."
 
 show reaper con
 
-mystery "Wait, you're actually scared?" 
+mystery "Wait, you're actually scared?"
 
-show reaper s 
+show reaper s
 
 mystery "It’s gonna be alright, trust me. These places only seem spooky ‘cause you’re seeing it at night."
 
 mystery "I bet if you were to come here in the day you’d just think it was a shitty old shed."
 
-"His lighthearted smile makes you feel a little bit better." 
+"His lighthearted smile makes you feel a little bit better."
 
 you "Thanks… I’m [you] by the way."
 
-mystery "Diesel."
+mystery "[reaper]."
 
 you "Should we head inside now?"
 

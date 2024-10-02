@@ -1,14 +1,14 @@
 label scene2:
     scene black
-    
+
     mc "Ugh…"
 
     scene mcroom_d1 with dissolve
 
     queue sound ["audio/vfx/movement.wav"] 
-    
-    "Looking over at your desktop setup, over at your screen with the 
-    latest attempt at a commissions site pulled up, you couldn’t help but feel a twinge of…"
+
+    """Looking over at your desktop setup, over at your screen with the
+    latest attempt at a commissions site pulled up, you couldn’t help but feel a twinge of…"""
    
 menu:
 
@@ -27,7 +27,7 @@ menu:
 
 "And not even the name brand. You’re down to {i}store-brand{/i} chips already."
 
-"Maybe it was time to face the music." 
+"Maybe it was time to face the music."
 
 "Maybe you should give up, find some temp job in an office and be a hobbyist."
 
@@ -39,11 +39,11 @@ mc "..."
 
 mc "What the hell is this?"
 
-"Tucked carelessly between bills, check ins, and junk mail- laid an oddly ornately decorated envelope. 
-Your eyes peered down suspiciously at the letter in your hand."
+"""Tucked carelessly between bills, check ins, and junk mail- laid an oddly ornately decorated envelope.
+Your eyes peered down suspiciously at the letter in your hand."""
 
-"With the corners fitted with swirls of gold and blue, 
+"""With the corners fitted with swirls of gold and blue,
 you turned the letter over to see your name penned in obnoxiously fancy script.
-You could barely understand it, but it read…"
+You could barely understand it, but it read…"""
 
 jump scene3
