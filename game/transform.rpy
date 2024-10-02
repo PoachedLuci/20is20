@@ -17,4 +17,3 @@ transform half_size:
 
 transform title_size: 
     zoom 0.70 #adjust as required
-
